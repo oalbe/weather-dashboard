@@ -1,0 +1,17 @@
+<div class="dashboard">
+    <div class="dashboard-header">
+        <div class="dashboard-header-location-info">
+            <div class="location-info-country">{{ country }} - {{ state }}</div>
+            <div class="location-info-city">Weather in <span class="dashboard-header-city">{{ city }}</span></div>
+        </div>
+
+        <div class="dashboard-header-date-info">
+            <div class="dashboard-header-date">{{ currentDate }}</div>
+            <div class="dashboard-header-time">{{ currentTime }}</div>
+        </div>
+    </div>
+
+    <app-current-weather *ngIf="currentWeatherComplete$ | async" [weather]="currentWeather"></app-current-weather>
+    <app-forecast *ngIf="forecastComplete$ | async" [forecast]="forecast"></app-forecast>
+    <app-temperature-graph *ngIf="forecastComplete$ | async" [temperatureData]="forecast.days"></app-temperature-graph>
+</div>
