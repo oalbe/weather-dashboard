@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class WeatherService {
-  private baseUrl = 'http://www.7timer.info/bin/api.pl';
+  private baseUrl = 'https://www.7timer.info/bin/api.pl';
 
   constructor(private http: HttpClient) {}
 

@@ -1,10 +1,15 @@
+@media (min-width:641px) {
+    .dashboard {
+        width: 50%;
+    }
+}
+
 .dashboard {
     font-family: roboto, sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 0 20px;
-    width: 50%;
     margin: 0 auto;
 
     .dashboard-header {
@@ -39,6 +44,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-end;
+
+            .dashboard-header-date {
+                text-align: right;
+            }
             
             .dashboard-header-time {
                 font-size: 1.5em;

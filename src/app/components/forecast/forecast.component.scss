@@ -25,6 +25,7 @@
         
         .forecast-day {
             flex: 1 1 0px;
+            min-width: 125px;
             display: flex;
             flex-direction: column;
             gap: 15px;
